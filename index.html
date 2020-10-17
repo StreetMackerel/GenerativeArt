@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../libraries/p5/p5.min.js" type="text/javascript"></script>
+
+    <script src="../../libraries/p5/p5.dom.min.js" type="text/javascript"></script>
+    <script src="../../libraries/generative-design-library/generative-design-library.js" type="text/javascript"></script>
+
+    <script src="simplexNoise.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <!-- help tooltip start -->
+    <script  src="../../libraries/jquery/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../libraries/tooltipster/tooltipster.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../libraries/tooltipster/tooltipster.bundle.css" />
+    <link rel="stylesheet" type="text/css" href="../../libraries/tooltipster/tooltipster-sideTip-noir.min.css" />
+    <script src="../../libraries/help-tooltip.js" type="text/javascript"></script>
+    <!-- help tooltip end -->
+  </head>
+  <body style="background-color:grey; margin:auto;">
+
+    <span id="help" data-tooltip-content="#help-content"></span>
+    <button onclick="lines=!lines" style="position:absolute; margin: 50px;">Lines</button>
+    <button onclick="rings=!rings" style="position:absolute; margin-top: 80px; margin-left: 50px">Rings</button>
+    <button onclick="dots=!dots" style="position:absolute; margin-top: 50px; margin-left: 100px">Dots</button>
+    <button onclick="dots2=!dots2" style="position:absolute; margin-top: 80px; margin-left: 100px">Dots2</button>
+    <button onclick="noLoop()" style="position:absolute; margin-top: 50px; margin-left: 160px">Pause</button>
+    <button onclick="loop()" style="position:absolute; margin-top: 50px; margin-left: 220px">Resume</button>
+
+  </body>
+</html>
